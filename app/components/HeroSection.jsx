@@ -3,7 +3,7 @@ import variables from '../variables.module.scss'
 
 const HeroSection = () => {
   return (
-    <section className={`${variables.title} h-screen`}>HeroSection</section>
+    <section className={`${variables.title} h-screen`}>Cover</section>
   )
 }
 
