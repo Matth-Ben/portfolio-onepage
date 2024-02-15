@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import SmoothScrolling from "./components/SmoothScrolling"
 
 import Navbar from "./components/Navbar";
 
@@ -16,7 +17,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <Navbar />
         
-        {children}
+        <SmoothScrolling>{children}</SmoothScrolling>
       </body>
     </html>
   );

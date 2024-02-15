@@ -15,7 +15,7 @@ const navLinks = [
 
 const Navbar = () => {
   return (
-    <nav className='flex justify-between items-center w-full'>
+    <nav className='container mx-auto fixed left-0 right-0 flex justify-between items-center w-full'>
         <Link href={'/'}>Logo</Link>
 
         <div className='burger'></div>

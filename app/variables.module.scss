@@ -3,3 +3,41 @@ $primary-color: #64ff00;
 .title {
     color: $primary-color;
 }
+
+.popin {
+    @apply flex items-center justify-center w-full h-full;
+    
+    &.visible {
+        .popin {
+            &_animA {
+                transition: transform .8s cubic-bezier(.86,0,.07,1);
+                transform: scaleX(1);
+                animation: blink 1s .35s;
+            }
+        
+            &_animB {
+                transition: transform .61s cubic-bezier(.86,0,.07,1) .39s;
+                transform: scaleY(1) translateZ(0);
+            }
+        }
+    }
+
+    &_animA {
+        transform: scaleX(0);
+    }
+
+    &_animB {
+        transform: scaleY(.05) translateZ(0);
+
+        @apply bg-white w-[21.4rem] h-[19.3rem];
+    }
+}
+
+@keyframes blink {
+    0%, 10%, 20% {
+        opacity: 0;
+    }
+    1%, 12%, 22%, 100% {
+        opacity: 1;
+    }
+}

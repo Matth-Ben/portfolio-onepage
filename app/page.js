@@ -4,9 +4,11 @@ import AboutSection from "./components/AboutSection";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <HeroSection />
-      <AboutSection />
+    <main className="flex min-h-screen justify-center">
+      <div className="container">
+        <HeroSection />
+        <AboutSection />        
+      </div>
     </main>
   );
 }
