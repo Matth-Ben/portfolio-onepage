@@ -10,8 +10,8 @@ export default {
     icon: DocumentTextIcon,
     preview: {
         select: {
-        title: 'heading',
-        image: 'image',
+            title: 'heading',
+            image: 'image',
         },
         prepare({title, image}) {
         return {

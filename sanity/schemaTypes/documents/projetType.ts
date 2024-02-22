@@ -1,13 +1,32 @@
-// ./schemas/pageType.ts
-
 import {defineArrayMember, defineField} from 'sanity'
 
 export default {
-    name: 'page',
+    name: 'projets',
     type: 'document',
-    title: 'Pages',
+    title: 'Projets',
     fields: [
-        defineField({name: 'title', type: 'string'}),
+        defineField({
+            name: 'title',
+            type: 'string',
+        }),
+        defineField({
+            name: "slug",
+            title: "Slug",
+            type: "slug",
+            options: { source: "title" }
+        }),
+        defineField({
+            name: 'image',
+            type: 'image',
+            options: {hotspot: true},
+            fields: [
+                defineField({
+                name: 'alt',
+                type: 'string',
+                title: 'Alternative text',
+                }),
+            ],
+        }),
         defineField({
             name: 'pageBuilder',
             type: 'array',

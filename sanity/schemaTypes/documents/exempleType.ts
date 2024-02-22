@@ -1,11 +1,11 @@
-// ./schemas/promotionType.ts
+// ./schemas/exempleType.ts
 
-import {defineField, defineType} from 'sanity'
+import {defineField} from 'sanity'
 
 export default {
-    name: 'promotion',
+    name: 'exemple',
     type: 'document',
-    title: 'Promotion',
+    title: 'Exemple',
     fields: [
         defineField({
             name: 'title',

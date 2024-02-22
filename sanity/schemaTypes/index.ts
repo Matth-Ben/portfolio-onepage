@@ -1,6 +1,6 @@
 import navigations from './documents/navigation'
 import page from './documents/pageType'
-import promotionType from './documents/promotionType'
+import projetType from './documents/projetType'
 
 import navItem from './objects/navItem'
 import link from './objects/link'
@@ -9,6 +9,8 @@ import textWithIllustration from './objects/textWithIllustration'
 import imageGallery from './objects/imageGallery'
 import videoType from './objects/videoType'
 import formType from './objects/formType'
+import formBuilder from './objects/formBuilder'
+import formFields from './objects/formFields'
 
 export const schemaTypes = [
     navigations,
@@ -18,7 +20,9 @@ export const schemaTypes = [
     hero, 
     textWithIllustration,
     imageGallery,
-    promotionType,
+    projetType,
     videoType,
-    formType
+    formType,
+    formBuilder,
+    formFields
 ]
