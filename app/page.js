@@ -5,12 +5,10 @@ import ProjectsSection from "./components/ProjectsSection";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen justify-center">
-      <div className="container">
+    <div>
         <HeroSection />
         <AboutSection />        
         <ProjectsSection />        
-      </div>
-    </main>
+    </div>
   );
 }

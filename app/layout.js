@@ -17,7 +17,11 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <Navbar />
         
-        <SmoothScrolling>{children}</SmoothScrolling>
+        <main className="flex min-h-screen justify-center">
+          <div className="container">
+            <SmoothScrolling>{children}</SmoothScrolling>
+          </div>
+        </main>
       </body>
     </html>
   );

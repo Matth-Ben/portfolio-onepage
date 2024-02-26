@@ -32,7 +32,15 @@ export default {
         }),
         defineField({
             name: 'excerpt',
-            type: 'text',
+            type: 'array',
+            of: [
+                {
+                    type: 'block'
+                },
+                {
+                    type: 'image'
+                }
+            ]
         }),
         defineField({
             name: 'image',
